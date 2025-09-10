@@ -74,7 +74,7 @@ export default function IntroScreen({ navigation }: any) {
 
           {/* 2. The Gradient Text */}
           <GradientText
-            colors={['#40596D', '#E3B532']} // From your new colors
+            colors={['#7e8694', '#E3B532']} // From your new colors
             className="text-4xl font-bold text-center mt-8 mb-4 px-8" // Increased size and padding
           >
             გადაცვალეთ ნაბიჯები ჯანსაღ ჯილდოებში

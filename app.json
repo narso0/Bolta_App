@@ -1,13 +1,33 @@
 {
   "expo": {
-    "name": "boltaaa",
-    "slug": "boltaaa",
+    "name": "ბოლთა",
+    "slug": "bolta",
     "version": "1.0.0",
+    "scheme": "exp+boltaaa",
     "ios": {
-      "bundleIdentifier": "com.narsoo.boltaa"
+      "bundleIdentifier": "com.narsoo.boltaaa",
+      "infoPlist": {
+        "NSMotionUsageDescription": "We use motion activity to count your steps and award coins."
+      },
+      "backgroundModes": ["fetch"]
     },
     "android": {
-      "package": "com.narsoo.boltaa"
+      "package": "com.narsoo.boltaaa",
+      "permissions": ["ACTIVITY_RECOGNITION"],
+      "googleServicesFile": "./google-services.json"
+    },
+    "splash": {
+      "image": "./assets/images/bolta-circle.png", 
+      "resizeMode": "contain", 
+      "backgroundColor": "#515773" 
+    },
+    "plugins": [
+      "@react-native-google-signin/google-signin"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b35562be-2878-41e7-91f7-cf0218cb2561"
+      }
     }
   }
 }

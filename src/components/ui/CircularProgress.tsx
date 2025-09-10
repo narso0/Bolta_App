@@ -25,7 +25,7 @@ export const CircularProgress = ({
       <Svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
         {/* Background Circle */}
         <Circle
-          stroke="#304050" // A dark color from your theme for the track
+          stroke="#486688" // <-- THIS IS THE FIX
           fill="transparent"
           strokeWidth={strokeWidth}
           r={radius}
